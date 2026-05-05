@@ -1,4 +1,4 @@
-title: Vippy
+title: FrameCaptureVP
 description: A customizable portfolio template for virtual photography
 url: https://vippy.nairdah.me
 baseurl: ''
@@ -14,15 +14,16 @@ nav_exclude:
   - pages/404.html
   - pages/index.md
 author:
-  name: Vippy
+  name: FrameCaptureVP
+  twitter: https://x.com/FrameCaptureVP
 permalink: /:categories/:title
 collections:
   projects:
     output: true
     permalink: /projects/:name
 virtual_photography:
-  show_date: true
-  show_tags: true
+  show_date: false
+  show_tags: false
 analytics:
   enabled: true
   google:

@@ -1,0 +1,515 @@
+--- Request 2026-05-05T02:35:36.347Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "Vippy",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "Vippy",
+  "theme_color_mode": "preset",
+  "theme_color_preset": "Teal",
+  "theme_color_custom": "#94e2d5",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting theme preset: Teal
+Updating social media...
+Removing social twitter
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: Vippy
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.png
+keyword...
+Config saved successfully
+
+--- Request 2026-05-05T02:45:39.042Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "Vippy",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "Vippy",
+  "theme_color_mode": "custom",
+  "theme_color_preset": "",
+  "theme_color_custom": "#800040",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "https://x.com/FrameCaptureVP",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting custom theme color: #800040
+Updating social media...
+Setting social twitter: https://x.com/FrameCaptureVP
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: Vippy
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.png
+keyword...
+Config saved successfully
+
+Error: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.copyFile (node:internal/fs/promises:624:7)
+    at C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\vippy-admin\server.js:481:22
+
+Error: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.copyFile (node:internal/fs/promises:624:7)
+    at C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\vippy-admin\server.js:481:22
+
+Error: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.copyFile (node:internal/fs/promises:624:7)
+    at C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\vippy-admin\server.js:481:22
+
+Error: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.copyFile (node:internal/fs/promises:624:7)
+    at C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\vippy-admin\server.js:481:22
+
+Error: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.copyFile (node:internal/fs/promises:624:7)
+    at C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\vippy-admin\server.js:481:22
+
+--- Request 2026-05-05T06:55:41.478Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "FrameCaptureVP",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "Vippy",
+  "theme_color_mode": "custom",
+  "theme_color_preset": "",
+  "theme_color_custom": "#800040",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "https://x.com/FrameCaptureVP",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting custom theme color: #800040
+Updating social media...
+Setting social twitter: https://x.com/FrameCaptureVP
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: FrameCaptureVP
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.pn...
+Config saved successfully
+
+--- Request 2026-05-05T06:55:52.076Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "FrameCaptureVP",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "FrameCaptureVP",
+  "theme_color_mode": "custom",
+  "theme_color_preset": "",
+  "theme_color_custom": "#800040",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "https://x.com/FrameCaptureVP",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting custom theme color: #800040
+Updating social media...
+Setting social twitter: https://x.com/FrameCaptureVP
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: FrameCaptureVP
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.pn...
+Config saved successfully
+
+--- Request 2026-05-05T06:55:52.804Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "FrameCaptureVP",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "FrameCaptureVP",
+  "theme_color_mode": "custom",
+  "theme_color_preset": "",
+  "theme_color_custom": "#800040",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "https://x.com/FrameCaptureVP",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting custom theme color: #800040
+Updating social media...
+Setting social twitter: https://x.com/FrameCaptureVP
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: FrameCaptureVP
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.pn...
+Config saved successfully
+
+--- Request 2026-05-05T06:55:53.500Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "FrameCaptureVP",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "FrameCaptureVP",
+  "theme_color_mode": "custom",
+  "theme_color_preset": "",
+  "theme_color_custom": "#800040",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "https://x.com/FrameCaptureVP",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting custom theme color: #800040
+Updating social media...
+Setting social twitter: https://x.com/FrameCaptureVP
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: FrameCaptureVP
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.pn...
+Config saved successfully
+
+--- Request 2026-05-05T06:56:42.071Z ---
+Body keys: title, description, url, author_name, theme_color_mode, theme_color_preset, theme_color_custom, keywords, analytics_enabled, analytics_id, social_twitter, social_bluesky, social_behance, social_dribbble, social_email, social_facebook, social_github, social_gitlab, social_instagram, social_kaggle, social_linkedin, social_medium, social_soundcloud, social_spotify, social_stackoverflow, social_tumblr, social_twitch, social_vimeo, social_youtube, social_keybase, social_discord, social_kofi
+Body: {
+  "title": "FrameCaptureVP",
+  "description": "A customizable portfolio template for virtual photography",
+  "url": "https://vippy.nairdah.me",
+  "author_name": "FrameCaptureVP",
+  "theme_color_mode": "custom",
+  "theme_color_preset": "",
+  "theme_color_custom": "#800040",
+  "keywords": "portfolio, photography, developer, personal site",
+  "analytics_enabled": "on",
+  "analytics_id": "",
+  "social_twitter": "https://x.com/FrameCaptureVP",
+  "social_bluesky": "",
+  "social_behance": "",
+  "social_dribbble": "",
+  "social_email": "",
+  "social_facebook": "",
+  "social_github": "",
+  "social_gitlab": "",
+  "social_instagram": "",
+  "social_kaggle": "",
+  "social_linkedin": "",
+  "social_medium": "",
+  "social_soundcloud": "",
+  "social_spotify": "",
+  "social_stackoverflow": "",
+  "social_tumblr": "",
+  "social_twitch": "",
+  "social_vimeo": "",
+  "social_youtube": "",
+  "social_keybase": "",
+  "social_discord": "",
+  "social_kofi": ""
+}
+Setting custom theme color: #800040
+Updating social media...
+Setting social twitter: https://x.com/FrameCaptureVP
+Removing social bluesky
+Removing social behance
+Removing social dribbble
+Removing social email
+Removing social facebook
+Removing social github
+Removing social gitlab
+Removing social instagram
+Removing social kaggle
+Removing social linkedin
+Removing social medium
+Removing social soundcloud
+Removing social spotify
+Removing social stackoverflow
+Removing social tumblr
+Removing social twitch
+Removing social vimeo
+Removing social youtube
+Removing social keybase
+Removing social discord
+Removing social kofi
+Saving config to: C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\_config.yml
+New YAML content (preview): title: FrameCaptureVP
+description: A customizable portfolio template for virtual photography
+url: https://vippy.nairdah.me
+baseurl: ''
+remote_theme: YoussefRaafatNasry/portfolYOU
+logo: /assets/logo.pn...
+Config saved successfully
+
+Error: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "src" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.copyFile (node:internal/fs/promises:624:7)
+    at C:\Users\Mario\Documents\GitHub\framecapturevp.github.io\vippy-admin\server.js:481:22
+
