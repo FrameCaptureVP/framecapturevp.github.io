@@ -329,9 +329,9 @@
         } else if (lastWindowWidth <= 1280) {
           return 1.5;
         } else if (lastWindowWidth <= 1949) {
-          return 2;
+          return 4;
         }
-        return 2.5;
+        return 5;
       },
       
       //We are not using this for now, and instead handle the size directly on the given urlForSize
@@ -508,7 +508,7 @@
 
         // Compute this row's height.
         var totalDesiredWidthOfImages = wrapperWidth - this.settings.spaceBetweenImages * (row.length - 1);
-        var rowHeight = totalDesiredWidthOfImages / rowAspectRatio;
+      var rowHeight = Math.min(totalDesiredWidthOfImages / rowAspectRatio, 600);
 
         // For each image in the row, compute the width, height, translateX,
         // and translateY values, and set them (and the transition value we
