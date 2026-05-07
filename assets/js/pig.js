@@ -327,7 +327,7 @@
         if (lastWindowWidth <= 640) {
           return 1;
         } else if (lastWindowWidth <= 1280) {
-          return 1.5;
+          return 2.5;
         } else if (lastWindowWidth <= 1949) {
           return 3;
         }
