@@ -267,7 +267,7 @@
        *   loaded and blurred to give the effect that images are loading out of
        *   focus and then coming into focus.
        */
-      thumbnailSize: 20,
+      thumbnailSize: 40,
 
       /**
        * Type: Boolean
