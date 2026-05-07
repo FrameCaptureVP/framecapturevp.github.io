@@ -13,7 +13,7 @@ card-offset: 13
 card-offset-x: 50
 card-zoom: 100
 banner-image: 11
-banner-offset: 22
+banner-offset: 75
 banner-offset-x: 50
 banner-zoom: 100
 ---
