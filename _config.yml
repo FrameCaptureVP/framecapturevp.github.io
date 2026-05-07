@@ -2,6 +2,7 @@ title: FrameCaptureVP
 description: A customizable portfolio template for virtual photography
 url: https://vippy.nairdah.me
 baseurl: ''
+future: true
 remote_theme: YoussefRaafatNasry/portfolYOU
 logo: /assets/logo.png
 keywords: portfolio, photography, developer, personal site
