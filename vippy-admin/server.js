@@ -973,8 +973,13 @@ app.post('/vippy/vp/delete-image/:slug/:index', async (req, res) => {
         const image = album.images[index];
         const urlPath = new URL(image.url).pathname;
         const thumbPath = new URL(image.thumb).pathname;
-        const originalFile = urlPath.split('/').slice(-2).join('/');
-        const thumbFile = thumbPath.split('/').slice(-3).join('/');
+       const originalFile = urlPath.split('/file/')[1];
+        const thumbFile = thumbPath.split('/file/')[1]
+        
+        if (!originalFile || !thumbFile) {
+            console.log('Bad key parse:', { urlPath, thumbPath });
+            continue;
+        }
 
         try {
             await deleteFromB2(originalFile);
@@ -1019,8 +1024,13 @@ app.post('/vippy/vp/delete/:slug', async (req, res) => {
             try {
                 const urlPath = new URL(image.url).pathname;
                 const thumbPath = new URL(image.thumb).pathname;
-                const originalFile = urlPath.split('/').slice(-2).join('/');
-                const thumbFile = thumbPath.split('/').slice(-3).join('/');
+                const originalFile = urlPath.split('/file/')[1];
+                const thumbFile = thumbPath.split('/file/')[1]
+                if (!originalFile || !thumbFile) {
+            console.log('Bad key parse:', { urlPath, thumbPath });
+            continue;
+        }
+
                 await deleteFromB2(originalFile);
                 await deleteFromB2(thumbFile);
             } catch (e) {
