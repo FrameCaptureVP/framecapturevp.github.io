@@ -1,7 +1,35 @@
 [
   {
-    "url":"https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/moux22pa-83rp.jpg",
-    "thumb":"https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/thumb/moux22pa-83rp.webp",
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/mouxrr8l-e0mg.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/thumb/mouxrr8l-e0mg.webp",
+    "aspectRatio": 1.7778,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/mouxrspj-dj6x.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/thumb/mouxrspj-dj6x.webp",
+    "aspectRatio": 0.75,
+    "width": 2160,
+    "height": 2880
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/mouxrp6x-7lju.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/thumb/mouxrp6x-7lju.webp",
+    "aspectRatio": 0.75,
+    "width": 2160,
+    "height": 2880
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/moux22pa-83rp.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/thumb/moux22pa-83rp.webp",
+    "aspectRatio": 2.39,
+    "width": 5760,
+    "height": 2410
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/mouxru9r-4wiq.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/assassins-creed-shadows/thumb/mouxru9r-4wiq.webp",
     "aspectRatio": 2.39,
     "width": 5760,
     "height": 2410
