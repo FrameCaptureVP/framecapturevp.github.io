@@ -206,9 +206,9 @@ async function deleteFromB2(fileName) {
 // Helper: Get CDN URL
 function getCdnUrl(filePath) {
     if (b2Config.use_cdn && b2Config.cdn_domain) {
-        return `https://${b2Config.cdn_domain}/${filePath}`;
+        const domain = b2Config.cdn_domain.replace(/^https?:\/\//, '');
+        return `https://${domain}/${filePath}`;
     }
-
     if (b2AuthData && b2AuthData.data && b2AuthData.data.s3ApiUrl) {
         const s3Host = b2AuthData.data.s3ApiUrl.replace('https://', '');
         return `https://${b2Config.bucket_name}.${s3Host}/${filePath}`;
