@@ -1,9 +1,65 @@
 [
   {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4mlap-erwz.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4mlap-erwz.webp",
+    "aspectRatio": 1,
+    "width": 2160,
+    "height": 2160
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4mmn1-2lzg.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4mmn1-2lzg.webp",
+    "aspectRatio": 1.7778,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4mtts-g6nj.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4mtts-g6nj.webp",
+    "aspectRatio": 1.7778,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4muup-92sr.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4muup-92sr.webp",
+    "aspectRatio": 1.7778,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4mpgd-dbr5.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4mpgd-dbr5.webp",
+    "aspectRatio": 1.7778,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4mo5q-efk7.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4mo5q-efk7.webp",
+    "aspectRatio": 0.75,
+    "width": 2160,
+    "height": 2880
+  },
+  {
     "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mosag2hr-6tn8.jpg",
     "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mosag2hr-6tn8.webp",
     "aspectRatio": 0.8,
     "width": 2160,
     "height": 2700
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4mr01-jpcj.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4mr01-jpcj.webp",
+    "aspectRatio": 2.7606,
+    "width": 3840,
+    "height": 1391
+  },
+  {
+    "url": "https://backblaze-proxy.framecapturevp.workers.dev/control/mov4msat-3j7r.jpg",
+    "thumb": "https://backblaze-proxy.framecapturevp.workers.dev/control/thumb/mov4msat-3j7r.webp",
+    "aspectRatio": 1.7778,
+    "width": 3840,
+    "height": 2160
   }
 ]
