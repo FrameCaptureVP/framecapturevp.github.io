@@ -231,7 +231,7 @@
        * Default: 8
        * Description: Size in pixels of the gap between images in the grid.
        */
-      spaceBetweenImages: 10,
+      spaceBetweenImages: 5,
 
       /**
        * Type: Number

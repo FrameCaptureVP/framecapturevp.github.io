@@ -62,13 +62,13 @@ site_modules:
   - id: projects
     name: Projects
     url: /projects/
-    enabled: true
+    enabled: false
     icon: bi-code-square
     admin_url: /vippy/projects
   - id: blog
     name: Blog
     url: /blog/
-    enabled: true
+    enabled: false
     icon: bi-journal-text
     admin_url: /vippy/blog
   - id: about
