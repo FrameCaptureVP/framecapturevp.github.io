@@ -35,5 +35,3 @@ vippy-admin/node_modules/
 node_modules/
 .env
 
-# VP Album Data (managed by admin panel, not git)
-_data/virtual-photography/
