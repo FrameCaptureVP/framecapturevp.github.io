@@ -981,11 +981,9 @@ app.post('/vippy/vp/delete-image/:slug/:index', async (req, res) => {
             return res.status(500).json({ error: 'Could not parse file paths' });
         }
 
-        try {
-            await deleteFromB2(originalFile);
-            await deleteFromB2(thumbFile);
-        } catch (e) {
-            console.error('Error deleting from B2:', e.message);
+           // B2 deletion disabled - manage files manually in Backblaze dashboard
+        // await deleteFromB2(originalFile);
+        // await deleteFromB2(thumbFile)
         }
 
         let newCardImage = album.cardImage || 0;
@@ -1031,12 +1029,10 @@ app.post('/vippy/vp/delete/:slug', async (req, res) => {
             continue;
         }
 
-                await deleteFromB2(originalFile);
-                await deleteFromB2(thumbFile);
-            } catch (e) {
-                console.error('Error deleting file from B2:', e.message);
-            }
-        }
+                 // B2 deletion disabled - manage files manually in Backblaze dashboard
+        // await deleteFromB2(originalFile);
+        // await deleteFromB2(thumbFile);
+        } 
 
         const postPath = path.join(POSTS_DIR, album.postFile);
         const jsonPath = path.join(DATA_DIR, album.jsonFile);
