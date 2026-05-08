@@ -16,7 +16,9 @@ nav_exclude:
   - pages/index.md
 author:
   name: FrameCaptureVP
-  twitter: https://x.com/FrameCaptureVP
+  twitter: FrameCaptureVP
+  instagram: framecapture_vp/
+  bluesky: framecapturevp.bsky.social
 permalink: /:categories/:title
 collections:
   projects:

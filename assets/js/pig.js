@@ -324,10 +324,12 @@
         }
         
         //Desktop
-        if (lastWindowWidth <= 640) {
-          return 1;
-        } else if (lastWindowWidth <= 1280) {
+        if (lastWindowWidth <= 480) {
+          return 2;
+        } else if (lastWindowWidth <= 768) {
           return 2.5;
+        } else if (lastWindowWidth <= 1280) {
+          return 3;
         } else if (lastWindowWidth <= 1949) {
           return 6;
         }
@@ -508,7 +510,8 @@
 
         // Compute this row's height.
         var totalDesiredWidthOfImages = wrapperWidth - this.settings.spaceBetweenImages * (row.length - 1);
-      var rowHeight = Math.min(totalDesiredWidthOfImages / rowAspectRatio, 600);
+      var isLastSingle = (index + 1 === this.images.length) && row.length === 1;
+      var rowHeight = Math.min(totalDesiredWidthOfImages / rowAspectRatio, isLastSingle ? 300 : 600);
 
         // For each image in the row, compute the width, height, translateX,
         // and translateY values, and set them (and the transition value we
