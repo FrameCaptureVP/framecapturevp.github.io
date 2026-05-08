@@ -973,12 +973,12 @@ app.post('/vippy/vp/delete-image/:slug/:index', async (req, res) => {
         const image = album.images[index];
         const urlPath = new URL(image.url).pathname;
         const thumbPath = new URL(image.thumb).pathname;
-       const originalFile = urlPath.split('/file/')[1];
-        const thumbFile = thumbPath.split('/file/')[1]
-        
+        const originalFile = urlPath.split('/file/')[1] || urlPath.replace(/^\//, '');
+        const thumbFile = thumbPath.split('/file/')[1] || thumbPath.replace(/^\//, '');
+
         if (!originalFile || !thumbFile) {
             console.log('Bad key parse:', { urlPath, thumbPath });
-            return;
+            return res.status(500).json({ error: 'Could not parse file paths' });
         }
 
         try {
@@ -1024,8 +1024,8 @@ app.post('/vippy/vp/delete/:slug', async (req, res) => {
             try {
                 const urlPath = new URL(image.url).pathname;
                 const thumbPath = new URL(image.thumb).pathname;
-                const originalFile = urlPath.split('/file/')[1];
-                const thumbFile = thumbPath.split('/file/')[1]
+               const originalFile = urlPath.split('/file/')[1] || urlPath.replace(/^\//, '');
+                const thumbFile = thumbPath.split('/file/')[1] || thumbPath.replace(/^\//, '');
                 if (!originalFile || !thumbFile) {
             console.log('Bad key parse:', { urlPath, thumbPath });
             continue;
