@@ -9,12 +9,12 @@ categories:
 tags: []
 slug: stellar-blade-ps5
 card-image: 2
-card-offset: 53
+card-offset: 50
 card-offset-x: 63
 card-zoom: 100
 banner-image: 7
-banner-offset: 87
-banner-offset-x: 50
+banner-offset: 50
+banner-offset-x: 47
 banner-zoom: 100
 ---
 

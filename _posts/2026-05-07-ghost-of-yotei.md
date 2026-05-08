@@ -9,7 +9,7 @@ categories:
 tags: []
 slug: ghost-of-yotei
 card-image: 12
-card-offset: 13
+card-offset: 48
 card-offset-x: 50
 card-zoom: 100
 banner-image: 11
