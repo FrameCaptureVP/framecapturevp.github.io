@@ -978,7 +978,7 @@ app.post('/vippy/vp/delete-image/:slug/:index', async (req, res) => {
         
         if (!originalFile || !thumbFile) {
             console.log('Bad key parse:', { urlPath, thumbPath });
-            continue;
+            return;
         }
 
         try {
