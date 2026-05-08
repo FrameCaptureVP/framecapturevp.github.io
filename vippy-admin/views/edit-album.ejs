@@ -204,7 +204,7 @@
                                             <input class="form-check-input" type="checkbox" id="compressToggle" checked>
                                             <label class="form-check-label fw-bold small text-primary"
                                                 for="compressToggle">
-                                                Squoosh Compression (WASM)
+                                                Compression  
                                             </label>
                                         </div>
 
@@ -216,7 +216,6 @@
                                                         <option value="mozjpeg">MozJPEG</option>
                                                         <option value="webp">WebP</option>
                                                         <option value="avif">AVIF</option>
-                                                        <option value="oxipng">OxiPNG</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -523,86 +522,50 @@
 
                 const formData = new FormData();
 
-                // Dynamic imports for jSquash
-                let mozjpeg, webp, avif, oxipng, png, resize;
-
-                if (isCompressEnabled) {
-                    uploadStatus.textContent = 'Loading codecs...';
-                    try {
-                        [mozjpeg, webp, avif, oxipng, png, resize] = await Promise.all([
-                            import('https://esm.sh/@jsquash/jpeg@1.2.0'),
-                            import('https://esm.sh/@jsquash/webp@1.2.0'),
-                            import('https://esm.sh/@jsquash/avif@1.2.0'),
-                            import('https://esm.sh/@jsquash/oxipng@1.1.0'),
-                            import('https://esm.sh/@jsquash/png@1.1.0'),
-                            import('https://esm.sh/@jsquash/resize@1.1.0')
-                        ]);
-                    } catch (err) {
-                        console.error('Failed to load codecs:', err);
-                        showAlert('danger', 'Failed to load codecs. Uploading original files.');
-                    }
+                      async function compressImage(file, encoder, quality, resizeScale) {
+                    return new Promise((resolve, reject) => {
+                        const img = new Image();
+                        img.onload = () => {
+                            const w = Math.round(img.width * resizeScale);
+                            const h = Math.round(img.height * resizeScale);
+                            const canvas = document.createElement('canvas');
+                            canvas.width = w;
+                            canvas.height = h;
+                            const ctx = canvas.getContext('2d');
+                            ctx.drawImage(img, 0, 0, w, h);
+                            let mimeType, extension;
+                            if (encoder === 'webp') { mimeType = 'image/webp'; extension = 'webp'; }
+                            else if (encoder === 'avif') { mimeType = 'image/avif'; extension = 'avif'; }
+                            else { mimeType = 'image/jpeg'; extension = 'jpg'; }
+                            canvas.toBlob((blob) => {
+                                if (!blob) return reject(new Error('Canvas toBlob failed'));
+                                resolve(new File([blob], `img.${extension}`, { type: mimeType }));
+                            }, mimeType, quality / 100);
+                        };
+                        img.onerror = reject;
+                        img.src = URL.createObjectURL(file);
+                    });
                 }
 
-                for (let i = 0; i < fileQueue.length; i++) {
+                  for (let i = 0; i < fileQueue.length; i++) {
                     let file = fileQueue[i];
-                    let currentFileName = file.name;
-
-                    if (isCompressEnabled && mozjpeg && webp && avif && oxipng && png && resize) {
+                    if (isCompressEnabled) {
                         uploadStatus.textContent = `Compressing ${i + 1}/${fileQueue.length}: ${file.name}`;
                         try {
-                            let imageData;
-                            const buffer = await file.arrayBuffer();
-                            if (file.type === 'image/jpeg' || file.type === 'image/jpg') {
-                                imageData = await mozjpeg.decode(buffer);
-                            } else if (file.type === 'image/webp') {
-                                imageData = await webp.decode(buffer);
-                            } else if (file.type === 'image/avif') {
-                                imageData = await avif.decode(buffer);
-                            } else if (file.type === 'image/png') {
-                                imageData = await png.decode(buffer);
-                            } else {
-                                imageData = await decodeWithCanvas(file);
-                            }
-
-                            if (isResizeEnabled && resizeScale < 1) {
-                                const width = Math.round(imageData.width * resizeScale);
-                                const height = Math.round(imageData.height * resizeScale);
-                                imageData = await resize.default(imageData, { width, height, method: 'lanczos3' });
-                            }
-
                             const encoder = document.getElementById('squooshEncoder').value;
-                            let encodedBuffer;
-                            let extension = 'jpg';
-                            let mimeType = 'image/jpeg';
-
-                            if (encoder === 'mozjpeg') {
-                                const quality = parseInt(document.getElementById('mozjpeg-quality').value);
-                                encodedBuffer = await mozjpeg.encode(imageData, { quality });
-                            } else if (encoder === 'webp') {
-                                const quality = parseInt(document.getElementById('webp-quality').value);
-                                encodedBuffer = await webp.encode(imageData, { quality });
-                                extension = 'webp';
-                                mimeType = 'image/webp';
-                            } else if (encoder === 'avif') {
-                                const quality = parseInt(document.getElementById('avif-quality').value);
-                                encodedBuffer = await avif.encode(imageData, { quality });
-                                extension = 'avif';
-                                mimeType = 'image/avif';
-                            } else if (encoder === 'oxipng') {
-                                const effort = parseInt(document.getElementById('oxipng-effort').value);
-                                const pngBuffer = await png.encode(imageData);
-                                encodedBuffer = await oxipng.encode(pngBuffer, { level: effort });
-                                extension = 'png';
-                                mimeType = 'image/png';
-                            }
-
-                            const baseName = currentFileName.split('.').slice(0, -1).join('.') || 'image';
-                            file = new File([encodedBuffer], `${baseName}.${extension}`, { type: mimeType });
+                            const qualityMap = {
+                                mozjpeg: parseInt(document.getElementById('mozjpeg-quality').value),
+                                webp: parseInt(document.getElementById('webp-quality').value),
+                                avif: parseInt(document.getElementById('avif-quality').value),
+                                oxipng: 90
+                            };
+                            const quality = qualityMap[encoder] ?? 75;
+                            const scale = isResizeEnabled ? resizeScale : 1;
+                            file = await compressImage(file, encoder, quality, scale);
                         } catch (err) {
-                            console.error('Compression error:', err);
+                            console.error('Compression failed, using original:', err);
                         }
                     }
-
                     formData.append('images', file);
                     progressBar.style.width = `${((i + 0.5) / fileQueue.length) * 50}%`;
                 }

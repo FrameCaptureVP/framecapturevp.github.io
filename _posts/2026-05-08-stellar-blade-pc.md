@@ -1,19 +1,19 @@
 ---
 layout: post
 date: '2026-05-08'
-title: 'Cyberpunk 2077: Phantom Liberty'
+title: Stellar Blade (PC)
 description: Virtual Photography
-developer: ' CD Projekt Red'
+developer: SHIFT UP Corporation
 categories:
   - virtual-photography
 tags: []
-slug: cyberpunk-2077-phantom-liberty
-card-image: 12
-card-offset: 100
-card-offset-x: 13
+slug: stellar-blade-pc
+card-image: 1
+card-offset: 50
+card-offset-x: 50
 card-zoom: 100
 banner-image: 0
-banner-offset: 53
+banner-offset: 19
 banner-offset-x: 50
 banner-zoom: 100
 ---
