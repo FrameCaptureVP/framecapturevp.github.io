@@ -12,8 +12,8 @@ card-image: 6
 card-offset: 36
 card-offset-x: 50
 card-zoom: 100
-banner-image: 0
-banner-offset: 32
+banner-image: 1
+banner-offset: 100
 banner-offset-x: 50
 banner-zoom: 100
 ---
