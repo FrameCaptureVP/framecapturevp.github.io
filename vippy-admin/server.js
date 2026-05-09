@@ -984,7 +984,6 @@ app.post('/vippy/vp/delete-image/:slug/:index', async (req, res) => {
            // B2 deletion disabled - manage files manually in Backblaze dashboard
         // await deleteFromB2(originalFile);
         // await deleteFromB2(thumbFile)
-        }
 
         let newCardImage = album.cardImage || 0;
         let newBannerImage = album.bannerImage || 0;
@@ -1032,6 +1031,9 @@ app.post('/vippy/vp/delete/:slug', async (req, res) => {
                  // B2 deletion disabled - manage files manually in Backblaze dashboard
         // await deleteFromB2(originalFile);
         // await deleteFromB2(thumbFile);
+         } catch (e) {
+                console.error('Error processing image:', e.message);
+            }
         } 
 
         const postPath = path.join(POSTS_DIR, album.postFile);
