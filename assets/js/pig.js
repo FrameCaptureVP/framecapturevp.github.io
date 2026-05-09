@@ -333,7 +333,7 @@
         } else if (lastWindowWidth <= 1949) {
           return 6;
         }
-        return 7;
+        return 8;
       },
       
       //We are not using this for now, and instead handle the size directly on the given urlForSize
