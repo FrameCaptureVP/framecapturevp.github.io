@@ -8,7 +8,7 @@ categories:
   - virtual-photography
 tags: []
 slug: wuchang-fallen-feathers
-card-image: 6
+card-image: 7
 card-offset: 36
 card-offset-x: 50
 card-zoom: 100

@@ -231,7 +231,7 @@
        * Default: 8
        * Description: Size in pixels of the gap between images in the grid.
        */
-      spaceBetweenImages: 5,
+      spaceBetweenImages: 6,
 
       /**
        * Type: Number
@@ -333,7 +333,7 @@
         } else if (lastWindowWidth <= 1949) {
           return 6;
         }
-        return 8;
+        return 7;
       },
       
       //We are not using this for now, and instead handle the size directly on the given urlForSize

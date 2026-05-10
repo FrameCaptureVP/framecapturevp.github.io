@@ -830,7 +830,7 @@ app.post('/vippy/vp/create', upload.array('images', 100), async (req, res) => {
 
             const thumbBuffer = await sharp(file.buffer)
                 .resize(600, null, { withoutEnlargement: true })
-                .webp({ quality: 85 })
+                .webp({ quality: 92 })
                 .toBuffer();
 
             const thumbFileName = `${slug}/thumb/${uniqueId}.webp`;
@@ -940,7 +940,7 @@ app.post('/vippy/vp/add-images/:slug', upload.array('images', 100), async (req, 
 
             const thumbBuffer = await sharp(file.buffer)
                 .resize(600, null, { withoutEnlargement: true })
-                .webp({ quality: 85 })
+                .webp({ quality: 92 })
                 .toBuffer();
             const thumbFileName = `${album.slug}/thumb/${uniqueId}.webp`;
             await uploadToB2(thumbFileName, thumbBuffer, 'image/webp');
